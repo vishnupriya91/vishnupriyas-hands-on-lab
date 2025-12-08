@@ -1,26 +1,23 @@
 fileVersion: 1
-id: 1f41b21d-40de-4a4f-9033-223019e8216a
+id: 42ad72f6-ead0-4e1c-a6de-f858cd604598
 name: V_SUPPLIER
 operation:
   config:
-    insertStrategy: INSERT
-    postSQL: ""
-    preSQL: ""
-    testsEnabled: true
-    truncateBefore: true
+    insertStrategy: UNION
+    selectDistinct: false
   database: ""
   deployEnabled: true
   description: Supplier data as defined by TPC-H
   isMultisource: false
   locationName: WORK
-  materializationType: table
+  materializationType: view
   metadata:
     appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 5fcff775-3b84-4d46-92de-0d2e9ec76ccb
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: bd0f7491-b328-4dd1-b4b3-e4bd2eedea36
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: NUMBER
         description: ""
@@ -33,8 +30,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 166eefba-2e9b-445b-b0a7-7f1d8308152a
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 4ef0c0ee-9bdf-4f5d-997c-1ff0c1aa6d51
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -47,8 +44,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f3b458b1-1b1c-4fe0-9db3-844005c4017b
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 97fce9f3-5f56-4f65-b2f1-68a26ba884a9
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: VARCHAR(25)
         description: ""
@@ -61,8 +58,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c8617243-6a21-4765-aa33-b3fabece5f01
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: fe8e5f0a-fb28-4a47-b42c-3e0a5bcb35e3
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: VARCHAR(40)
         description: ""
@@ -75,8 +72,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 7eb5175b-aef2-445c-acb3-c5e01c87cf4c
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 73427f0a-5063-468b-9a5c-32601f9037b5
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -89,8 +86,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 28d69963-5082-4ae8-ad2a-a88e20e0d509
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 2ab65741-0c09-4f77-8932-dd4496f15e7f
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -103,8 +100,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 7c119444-0f88-4801-ae26-0c20bb9f4328
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 2da75bdd-fde4-46d4-b802-dfbc65826b87
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -117,8 +114,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c65085ca-4991-4f0f-92b7-3729accc3b4b
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 49babfe2-ec72-4258-afec-27771b86c9a8
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: VARCHAR(101)
         description: ""
@@ -131,8 +128,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: d1aba1c8-e1bf-4c80-bd62-c9491e3962b0
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 1fd06de8-a269-48d8-a329-7ed4613a1b06
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: NUMBER
         description: ""
@@ -145,8 +142,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: a7bef532-117e-4f14-be67-4d0c3744db61
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 8dc4ad9e-4794-4678-97e8-5096926b8775
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: VARCHAR
         description: ""
@@ -159,8 +156,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 9b67af96-fc20-45d9-9c08-12a2cdee6bda
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 28b4bd54-f3bd-4a11-b247-09ca64f4f036
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -173,8 +170,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f09c8880-9acf-4913-82ee-eb44616bc4fa
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 0ec636e5-b19f-44b9-a590-caa15b7cdcd1
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -187,8 +184,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 4c352236-e8bd-46dc-bf3d-e7b9e4351ef1
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 790e0ae4-2794-46c0-8d9a-a7771bf9cd61
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -201,8 +198,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 024ed52a-1edc-4fd2-af55-93aa28e1d5a5
-          stepCounter: 1f41b21d-40de-4a4f-9033-223019e8216a
+          columnCounter: 6489ad63-531b-4f82-a932-caee02cfbb70
+          stepCounter: 42ad72f6-ead0-4e1c-a6de-f858cd604598
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -219,7 +216,43 @@ operation:
       - aliases:
           DIM_SUPPLIER: 1771226f-a3f4-474c-afae-13643f4db8df
         customSQL:
-          customSQL: ""
+          customSQL: |-
+            {{ stage('Override Create SQL') }} 
+            CREATE OR REPLACE VIEW {{ ref('WORK', 'V_SUPPLIER') }} AS ( 
+                WITH  
+                FilteredSuppliers AS ( 
+                    SELECT  
+                        *  
+                    FROM {{ ref('WORK', 'DIM_SUPPLIER') }} 
+                    WHERE "S_ACCTBAL" > 0 -- Filter suppliers with positive account balance 
+                ), 
+                EnhancedSuppliers AS ( 
+                    SELECT  
+                        "DIM_SUPPLIER_KEY", 
+                        "S_SUPPKEY", 
+                        "S_NAME", 
+                        "S_ADDRESS", 
+                        "S_NATIONKEY", 
+                        "S_PHONE", 
+                        "S_ACCTBAL", 
+                        "S_COMMENT", 
+                        "SYSTEM_VERSION", 
+                        "SYSTEM_CURRENT_FLAG", 
+                        "SYSTEM_START_DATE", 
+                        "SYSTEM_END_DATE", 
+                        "SYSTEM_CREATE_DATE", 
+                        "SYSTEM_UPDATE_DATE", 
+                        CASE  
+                            WHEN "S_ACCTBAL" > 10000 THEN 'HIGH_BALANCE' 
+                            WHEN "S_ACCTBAL" BETWEEN 5000 AND 10000 THEN 'MEDIUM_BALANCE' 
+                            ELSE 'LOW_BALANCE' 
+                        END AS "BALANCE_CATEGORY" -- Classify suppliers by account balance 
+                    FROM FilteredSuppliers 
+                ) 
+                SELECT  
+                    * 
+                FROM EnhancedSuppliers 
+            ); 
         dependencies:
           - locationName: WORK
             nodeName: DIM_SUPPLIER
@@ -228,9 +261,9 @@ operation:
         name: V_SUPPLIER
         noLinkRefs: []
   name: V_SUPPLIER
-  overrideSQL: false
+  overrideSQL: true
   schema: ""
-  sqlType: Stage
+  sqlType: View
   type: sql
   version: 1
 type: Node
