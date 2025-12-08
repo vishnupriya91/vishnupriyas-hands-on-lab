@@ -1,0 +1,127 @@
+fileVersion: 1
+id: 27bd8f36-dc4b-4d5d-8e0a-f4bab53416bb
+name: STG_CUSTOMERDV
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Customer data as defined by TPC-H
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 786cc416-a683-4337-87cf-35d9b499b874
+          stepCounter: 27bd8f36-dc4b-4d5d-8e0a-f4bab53416bb
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: C_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 790e43ea-384a-4f26-87eb-084c51ddfb6e
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6607a8b-fefa-4761-8335-3a562be757e0
+          stepCounter: 27bd8f36-dc4b-4d5d-8e0a-f4bab53416bb
+        config: {}
+        dataType: VARCHAR(40)
+        description: ""
+        name: C_ADDRESS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a1a2b2ac-86bb-454b-ab62-b01a39c05354
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba7394d5-c983-4989-b96a-bc33e1b6f399
+          stepCounter: 27bd8f36-dc4b-4d5d-8e0a-f4bab53416bb
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: C_PHONE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7e2630e-96f0-4083-a914-86a4bf78ed28
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3650d18a-d6cb-4d01-a62a-f4bd7327d3ff
+          stepCounter: 27bd8f36-dc4b-4d5d-8e0a-f4bab53416bb
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: C_ACCTBAL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9628d88d-d49e-4d49-b264-c46c24c54855
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9203157-eb2d-4cb5-aae6-0fa24a1cb17a
+          stepCounter: 27bd8f36-dc4b-4d5d-8e0a-f4bab53416bb
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fda9e67f-9577-4ac5-be44-1092bd3ac4b7
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cf1763b-e3f0-4380-ae7c-8c12d43595b4
+          stepCounter: 27bd8f36-dc4b-4d5d-8e0a-f4bab53416bb
+        config: {}
+        dataType: VARCHAR(117)
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9c6c9052-f4b1-47bc-a458-712e6634236c
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          HUB_CUSTOMER: 9650653b-60a3-4d91-bd8d-b822bf69c2a5
+          SATV0_CUSTOMER: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: HUB_CUSTOMER
+          - locationName: WORK
+            nodeName: SATV0_CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('WORK', 'HUB_CUSTOMER') }} "HUB_CUSTOMER" INNER JOIN {{ ref('WORK', 'SATV0_CUSTOMER') }} "SATV0_CUSTOMER" ON "HUB_CUSTOMER"."HK_CUSTOMER_H" = "SATV0_CUSTOMER"."HK_CUSTOMER_H"
+        name: STG_CUSTOMERDV
+        noLinkRefs: []
+  name: STG_CUSTOMERDV
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

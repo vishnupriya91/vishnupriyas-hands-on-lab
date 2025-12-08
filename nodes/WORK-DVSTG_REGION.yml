@@ -1,0 +1,113 @@
+fileVersion: 1
+id: 4945accd-c6c7-49d8-aceb-3725400093d5
+name: DVSTG_REGION
+operation:
+  config:
+    contains_multiactive_data: false
+    generate_ghost_records: true
+  database: ""
+  deployEnabled: true
+  description: Region data as defined by TPC-H
+  isMultisource: false
+  locationName: WORK
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4fac33d8-eaa2-4157-a1b3-d3b8ee20f5e8
+          stepCounter: 4945accd-c6c7-49d8-aceb-3725400093d5
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: R_REGIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d9b40c85-e982-492c-a627-a4ffec29f4c2
+                stepCounter: 423f7d71-7828-4604-8c5c-4ed556b32f6f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd8d544c-6c23-4e24-9d9d-334242debb54
+          stepCounter: 4945accd-c6c7-49d8-aceb-3725400093d5
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: R_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f2a72e05-e1b4-4282-9032-b7eeec95f033
+                stepCounter: 423f7d71-7828-4604-8c5c-4ed556b32f6f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3afaa520-66de-4f02-b2ab-d490499e5b8f
+          stepCounter: 4945accd-c6c7-49d8-aceb-3725400093d5
+        config: {}
+        dataType: VARCHAR(152)
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0484f932-7c94-4c87-ae6a-89a9eb3725aa
+                stepCounter: 423f7d71-7828-4604-8c5c-4ed556b32f6f
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86d89f68-461d-4338-8d74-e9c89f41758d
+          stepCounter: 4945accd-c6c7-49d8-aceb-3725400093d5
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        is_system_ldts: true
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: SYSDATE()
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2c7a575-351c-4d31-8d64-3897024a2ad7
+          stepCounter: 4945accd-c6c7-49d8-aceb-3725400093d5
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The Record Source (RSRC) describes the source of this data.
+        is_system_rsrc: true
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{record_source()}}"
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          REGION: 423f7d71-7828-4604-8c5c-4ed556b32f6f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: REGION
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }} "REGION"
+        name: DVSTG_REGION
+        noLinkRefs: []
+  name: DVSTG_REGION
+  overrideSQL: false
+  schema: ""
+  sqlType: DataVault:::4
+  type: sql
+  version: 1
+type: Node

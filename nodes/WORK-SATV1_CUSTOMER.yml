@@ -1,0 +1,223 @@
+fileVersion: 1
+id: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+name: SATV1_CUSTOMER
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+  database: ""
+  deployEnabled: true
+  description: Customer data as defined by TPC-H
+  isMultisource: false
+  locationName: WORK
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: befe1235-f069-4497-8332-6497d321da72
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config:
+          is_hk: true
+        dataType: STRING
+        description: ""
+        name: HK_CUSTOMER_H
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2cc23694-0a2c-4b39-9afd-6b3b4efa540c
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd9f0e69-a608-4a13-8a6b-db8f6bc4e119
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: STRING
+        description: ""
+        name: HD_CUSTOMER_N_S
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 73cf737f-87af-4dce-973a-b8a77ef06c03
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d1e81179-1e4b-40d1-9010-118714fd420f
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: C_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 790e43ea-384a-4f26-87eb-084c51ddfb6e
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12f59492-1d3d-433a-849a-bf3278b766b4
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: VARCHAR(40)
+        description: ""
+        name: C_ADDRESS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a1a2b2ac-86bb-454b-ab62-b01a39c05354
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08b3ec8f-4a47-4f05-9f2e-7ae4d1c36b5f
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: C_PHONE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7e2630e-96f0-4083-a914-86a4bf78ed28
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd2910de-15e4-40e9-9ff0-4eacd41f29f7
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: C_ACCTBAL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9628d88d-d49e-4d49-b264-c46c24c54855
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31161b17-72fd-4e54-89cd-1b9780fde092
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fda9e67f-9577-4ac5-be44-1092bd3ac4b7
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 304a5b81-3ab8-4a0d-9c73-71dabeaab232
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: VARCHAR(117)
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9c6c9052-f4b1-47bc-a458-712e6634236c
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb660660-e4d8-4bfa-a4b0-5078e0e7da1b
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: TIMESTAMP
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf90c115-6bba-4a21-92d5-612795a5e123
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b93cfb5e-5d2b-477b-a3b3-a53a0a226e01
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: STRING
+        description: The Record Source (RSRC) describes the source of this data.
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40704a51-de67-4f02-ae39-bb7db5741f48
+                stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91d9eee2-3d74-43a4-b219-55372da8c1a5
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        is_system_ledts: true
+        name: LEDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |-
+              COALESCE(LEAD("{{ datavault4coalesce.config.ldts_alias }}" - INTERVAL '1 MICROSECOND') 
+              OVER (PARTITION BY "{{ get_value_by_column_attribute("is_hk") }}" 
+              ORDER BY "{{ datavault4coalesce.config.ldts_alias }}"), {{ datavault4coalesce__string_to_timestamp(datavault4coalesce.config.timestamp_format, datavault4coalesce.config.end_of_all_times) }})
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02a3da5c-453d-493c-a5ed-f05f544b91a6
+          stepCounter: 9b8a4a53-0d97-4ce3-aaf1-048bff66bc16
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        is_system_current_col: true
+        name: IS_CURRENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: |-
+              CASE 
+                WHEN 
+                  LEAD("{{ datavault4coalesce.config.ldts_alias }}" - INTERVAL '1 MICROSECOND') 
+                  OVER (PARTITION BY "{{ get_value_by_column_attribute("is_hk") }}" 
+                  ORDER BY "{{ datavault4coalesce.config.ldts_alias }}") IS NULL 
+                THEN TRUE 
+                ELSE FALSE 
+              END
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          SATV0_CUSTOMER: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: SATV0_CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('WORK', 'SATV0_CUSTOMER') }} "SATV0_CUSTOMER"
+        name: SATV1_CUSTOMER
+        noLinkRefs: []
+  name: SATV1_CUSTOMER
+  overrideSQL: false
+  schema: ""
+  sqlType: DataVault:::9
+  type: sql
+  version: 1
+type: Node
