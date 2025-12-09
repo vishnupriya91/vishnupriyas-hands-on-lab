@@ -58,7 +58,7 @@ operation:
           - columnReferences:
               - columnCounter: e7e2630e-96f0-4083-a914-86a4bf78ed28
                 stepCounter: edbfddda-cf20-4707-9d7d-6e1b7e1940cf
-            transform: ""
+            transform: "{{ clean_phone_number('C_PHONE') }}"
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3650d18a-d6cb-4d01-a62a-f4bd7327d3ff

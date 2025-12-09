@@ -1,0 +1,10 @@
+fileVersion: 1
+id: "1"
+macroString: |+
+  {% macro clean_phone_number(ph_num) %}
+      -- SQL logic to strip all non-numeric characters from the input column
+      REGEXP_REPLACE({{ ph_num }}, '[^0-9]', '')
+  {% endmacro %}
+
+name: macro
+type: Macro

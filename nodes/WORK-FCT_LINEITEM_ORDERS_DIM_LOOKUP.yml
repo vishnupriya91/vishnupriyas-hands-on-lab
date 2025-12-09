@@ -499,7 +499,7 @@ operation:
         config: {}
         dataType: NUMBER(12,2)
         description: ""
-        name: ORDER_TOTAL_LOCAL_CURRENCY
+        name: O_TOTALPRICE
         nullable: false
         sourceColumnReferences:
           - columnReferences:
