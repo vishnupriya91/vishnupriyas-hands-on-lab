@@ -6,7 +6,7 @@ mappingDefinitions:
     schema: TPCH_SF1
   WORK:
     database: TRAINING
-    schema: TEST
+    schema: WORKDEV
   WORKDEV:
     database: ""
     schema: ""
