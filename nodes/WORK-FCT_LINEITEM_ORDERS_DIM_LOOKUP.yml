@@ -325,20 +325,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 22ad7dbc-4890-45e2-91b5-b66bc469302d
-          stepCounter: 88e3cae5-4e4b-4466-809b-5621fd1cb402
-        config: {}
-        dataType: NUMBER(12,2)
-        description: ""
-        name: ORDER_TOTALPRICE
-        nullable: false
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: f1db5dc5-dda1-4710-9fe5-266034cdb1e2
-                stepCounter: f703038f-5f4f-4e55-b172-ccf35c86af7b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: b88f91d6-0cca-4a04-bf0d-eb15a443eb98
           stepCounter: 88e3cae5-4e4b-4466-809b-5621fd1cb402
         config: {}
@@ -501,6 +487,23 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: ee37a8a4-505a-4645-971d-22571a79c29a
+                stepCounter: f703038f-5f4f-4e55-b172-ccf35c86af7b
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04ff4550-d236-4ea9-94cf-06929a97bc06
+          stepCounter: 88e3cae5-4e4b-4466-809b-5621fd1cb402
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: ORDER_TOTAL_LOCAL_CURRENCY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c0824aa-7a7c-4d1e-a72d-ed6024e5fe68
                 stepCounter: f703038f-5f4f-4e55-b172-ccf35c86af7b
             transform: ""
     cteString: ""

@@ -313,20 +313,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 45334704-dbbb-49b6-8fc2-dd21811aeb9e
-          stepCounter: f16b4c77-40c9-4d62-a458-318fdb4a6881
-        config: {}
-        dataType: NUMBER(12,2)
-        description: ""
-        name: O_TOTALPRICE
-        nullable: false
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 1b3b55b3-a91c-4480-8f91-3cca6c1bcc38
-                stepCounter: 0d821e1a-ed6d-47b0-8597-3c1db90204d4
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 9a22b3d1-0b74-454d-8a87-3a73ee5e24a7
           stepCounter: f16b4c77-40c9-4d62-a458-318fdb4a6881
         config: {}
@@ -429,6 +415,23 @@ operation:
                 stepCounter: "0"
             transform: DATEDIFF('DAY',"STG_ORDERS"."O_ORDERDATE","STG_LINEITEM"."L_SHIPDATE")
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a56341cf-16cd-4b23-ada3-649202ef6a52
+          stepCounter: f16b4c77-40c9-4d62-a458-318fdb4a6881
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: ORDER_TOTAL_LOCAL_CURRENCY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b3b55b3-a91c-4480-8f91-3cca6c1bcc38
+                stepCounter: 0d821e1a-ed6d-47b0-8597-3c1db90204d4
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
