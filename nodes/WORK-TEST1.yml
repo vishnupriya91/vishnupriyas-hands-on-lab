@@ -3,15 +3,15 @@ id: 004d9c1f-0bfb-431b-b60d-c204ac2ec30b
 name: TEST1
 operation:
   config:
-    insertStrategy: INSERT
+    insertStrategy: UNION
     postSQL: ""
     preSQL: ""
     testsEnabled: true
     truncateBefore: true
   database: ""
-  deployEnabled: true
+  deployEnabled: false
   description: ""
-  isMultisource: false
+  isMultisource: true
   locationName: WORK
   materializationType: table
   metadata:

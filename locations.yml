@@ -1,5 +1,6 @@
-defaultStorageMapping: WORK
+defaultStorageMapping: WORKDEV
 fileVersion: 1
 locations:
   - SRC
   - WORK
+  - WORKDEV
