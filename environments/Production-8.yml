@@ -7,8 +7,5 @@ mappingDefinitions:
   WORK:
     database: TRAINING
     schema: PROD
-  WORKDEV:
-    database: ""
-    schema: ""
 name: Production
 type: Environment

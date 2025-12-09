@@ -7,8 +7,5 @@ mappingDefinitions:
   WORK:
     database: TRAINING
     schema: WORKDEV
-  WORKDEV:
-    database: ""
-    schema: ""
 name: Testing
 type: Environment
