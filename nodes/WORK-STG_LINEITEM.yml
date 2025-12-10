@@ -234,7 +234,7 @@ operation:
         config: {}
         dataType: VARCHAR(44)
         description: ""
-        name: L_COMMENT
+        name: L_COMMENT_UPDATED
         nullable: false
         sourceColumnReferences:
           - columnReferences:
