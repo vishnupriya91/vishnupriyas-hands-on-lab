@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "1"
-includeSelector: "+{location: WORK name: FCT_LINEITEM_ORDERS_DIM_LOOKUP}"
+includeSelector: "{location: WORK name: STG_LINEITEM}+"
 name: Job1
 type: Job
